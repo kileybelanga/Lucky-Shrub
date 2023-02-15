@@ -1,0 +1,226 @@
+ * {
+    margin: 0;
+    padding: 0;
+    }
+
+    
+header > img{ 
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    height:auto;
+    max-width:8%;
+}
+/* --- nav bar begin --- */
+nav ul{
+    list-style:none;
+    text-align:center;
+    margin: 0;
+    padding: 25px;
+}
+
+nav li{
+    display:inline;
+    padding:15px;
+    font-family: Helvetica, Arial, sans-serif;
+    color:rgb(56, 63, 62);
+}
+
+a:link{
+    color: black;
+    text-decoration:none;
+}
+
+a:visited{
+    color:black;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline #26877F 5px;
+    text-underline-offset: 10px;
+}
+
+a:active{
+    color:black;
+    text-decoration:underline #186862 5px;
+    text-underline-offset: 10px;
+}
+/* --- nav bar end --- */
+
+/* --- promotion hero begin --- */
+section{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.hero{
+    height:500px;
+    display: flex;
+  justify-content: center;
+  align-items: center;  
+    /*background hero image styling*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(Assets/Desert-Landscape.png);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+article{
+    flex:1;
+    flex-wrap:wrap;
+}
+
+.promo{
+
+}
+
+.promo > h1{
+    color:white;
+    text-align:center;  
+    font-family: Bebas Neue, Helvetica, Arial, Sans-serif;
+    font-size: 70px;
+}
+
+.promo > p{
+    color:white;
+    text-align:center;  
+    font-family: Lato, Helvetica , Arial, Sans-serif;
+    font-size: 24px; 
+}
+
+button{
+    display: block;
+    margin:auto;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius:30px;
+    background-color:rgba(0, 0, 0, 0.0);
+    border-style: solid;
+    border-color: white;
+    color: white;
+  }
+
+  button:hover{
+    padding: 10px 32px;
+    text-align: center;
+    margin:0 auto;
+    font-size: 16px;
+    border-radius:30px;
+    background-color:rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    border-color: white;
+    color: white;
+  }
+/* --- promotion hero end --- */
+
+/* --- cards begin --- */
+.cardcontainer{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    column-gap: 40px;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width:90%;
+}
+
+.cards{
+    flex: 1;
+    background-color: white;
+    box-shadow: 5px 5px 10px 2px lightgrey;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom:25px;
+
+}
+
+.landscaping > img {
+        object-fit: cover;
+        width:100%;
+        height: 200px;
+        margin-bottom:20px;
+}
+
+.plantnursery > img {
+    object-fit: cover;
+    width:100%;
+    height: 200px;
+    margin-bottom:20px;
+}
+
+.aboutus > img {
+    object-fit: cover;
+    width:100%;
+    height: 200px;
+    margin-bottom:20px;
+}
+
+div > h2{
+    color:#26877F;
+    text-align:left;  
+    font-family: Bebas Neue, Helvetica, Arial, Sans-serif;
+    font-size: 40px;
+    margin: 0 20px -10px 20px;
+    
+}
+
+div > p{
+    color:#1d1e1e;
+    text-align:left;  
+    font-family: Lato, Helvetica , Arial, Sans-serif;
+    font-size: 15px; 
+    margin: 10px 20px 20px 20px;
+}
+
+div > a{
+    color:#1d1e1e;
+    text-align:left;  
+    font-family: Lato, Helvetica , Arial, Sans-serif;
+    font-size: 15px; 
+    margin: 10px 20px 40px 20px;
+}
+
+
+/* --- cards end --- */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 75%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    align-content: center;
+}
+
+
+footer > div{
+    flex:1;
+    margin: 0;
+    align-self:flex-end;
+
+}
+
+@media screen and (max-width: 800px) {
+    .cardcontainer {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    footer{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    footer > div {
+      align-self:center;
+  }
+ 
